@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "TransView",
+  "version": "1.0",
+  "description": "Adjust transparency and view web content in a pop-up box.",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

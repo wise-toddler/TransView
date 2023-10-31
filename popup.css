@@ -1,0 +1,63 @@
+/* Apply basic styles to the entire pop-up box */
+body {
+    width: 300px;
+    /* Adjust the width as needed */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    /* Dark background color */
+    color: #fff;
+    /* Text color */
+}
+
+/* Style the header */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    /* Header text color */
+}
+
+/* Style the paragraph */
+p {
+    font-size: 14px;
+    color: #aaa;
+    /* Paragraph text color */
+    margin-bottom: 20px;
+}
+
+/* Style the transparency controls label and value */
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffcc00;
+    /* Label text color */
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+#transparencyValue {
+    display: block;
+    font-size: 14px;
+    margin-top: 5px;
+    color: #ffcc00;
+    /* Transparency value text color */
+}
+
+/* Style the web content area (adjust as needed) */
+#webContent {
+    width: 100%;
+    height: 300px;
+    /* Initial height; adjust as needed */
+    background-color: #222;
+    /* Dark background color for web content area */
+    border: 1px solid #444;
+    /* Border color */
+    overflow: auto;
+    /* Enable scrolling when content overflows */
+    resize: both;
+    /* Allow resizing in both directions (horizontal and vertical) */
+}
