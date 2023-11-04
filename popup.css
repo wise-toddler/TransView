@@ -1,36 +1,37 @@
-/* Apply basic styles to the entire pop-up box */
+/* Apply basic styles to the entire popup */
 body {
-    width: 300px;
+    width: 400px;
     /* Adjust the width as needed */
-    padding: 20px;
     font-family: Arial, sans-serif;
-    background-color: #333;
-    /* Dark background color */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Transparent background color */
     color: #fff;
-    /* Text color */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Hide scrollbars */
 }
 
-/* Style the header */
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ffcc00;
-    /* Header text color */
+/* Style the iframe to take up the entire popup */
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    /* Remove iframe border */
 }
 
-/* Style the paragraph */
+/* Style the heading and paragraph */
+h1,
 p {
-    font-size: 14px;
-    color: #aaa;
-    /* Paragraph text color */
-    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
 }
 
 /* Style the transparency controls label and value */
 label {
-    font-size: 16px;
     display: block;
-    margin-bottom: 10px;
+    font-size: 16px;
+    margin: 10px 0;
     color: #ffcc00;
     /* Label text color */
 }
@@ -47,17 +48,36 @@ input[type="range"] {
     /* Transparency value text color */
 }
 
-/* Style the web content area (adjust as needed) */
-#webContent {
+/* Style the iframe container */
+iframe-container {
     width: 100%;
-    height: 300px;
-    /* Initial height; adjust as needed */
-    background-color: #222;
-    /* Dark background color for web content area */
-    border: 1px solid #444;
-    /* Border color */
-    overflow: auto;
-    /* Enable scrolling when content overflows */
-    resize: both;
-    /* Allow resizing in both directions (horizontal and vertical) */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style buttons with dark backgrounds and light text */
+button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+/* Style the user-friendly window button */
+#openUserFriendlyButton {
+    background-color: #00b200;
+    /* Dark green */
+}
+
+/* Style the load active tab content button */
+#loadActiveTabButton {
+    background-color: #ff8800;
+    /* Dark orange */
 }

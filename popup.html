@@ -2,18 +2,22 @@
 <html>
 
 <head>
-    <title>TransView Pop-up</title>
+    <title>Transparent Popup</title>
     <link rel="stylesheet" type="text/css" href="popup.css">
 </head>
 
 <body>
     <h1>Welcome to TransView</h1>
-    <p>Adjust transparency and view web content in a pop-up box.</p>
+    <p>View the webpage from the current active tab.</p>
 
-    <!-- Add your transparency controls here (e.g., sliders, buttons) -->
+    <!-- Transparency slider controls -->
     <label for="transparencySlider">Transparency Level:</label>
     <input type="range" id="transparencySlider" min="0" max="100" step="1">
     <span id="transparencyValue">50%</span>
+
+    <!-- Transparent iframe to display the current active tab's webpage -->
+    <iframe id="webContent" frameborder="0"></iframe>
+
     <script src="popup.js"></script>
 </body>
 
