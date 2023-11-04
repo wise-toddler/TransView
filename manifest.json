@@ -4,6 +4,11 @@
   "version": "1.0",
   "description": "A transparent popup that displays the webpage from the current active tab.",
   "permissions": ["activeTab"],
+  "icons": {
+    "48": "images/transparency-icon.png",
+    "16": "images/transparency-icon.png",
+    "128": "images/transparency-icon.png"
+  },
   "action": {
     "default_popup": "popup.html"
   }
